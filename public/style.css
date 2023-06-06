@@ -23,23 +23,27 @@ section {
     min-height: 94vh;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
 
-p{
+p {
     font-size: 1.5rem;
 }
 
-svg{
+svg {
     padding: 5px;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.2rem;
+}
+
+.title h1 {
+    text-align: center;
 }
 
 .hidden {
@@ -65,6 +69,15 @@ a:hover {
     color: orange;
 }
 
+.box {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* LOGOS */
 .logos {
     display: flex;
@@ -73,6 +86,8 @@ a:hover {
 .logos a:hover {
     color: red;
     cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .055s;
 }
 
 .logo:nth-child(1) {
